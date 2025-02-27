@@ -1,0 +1,9 @@
+In this task, you will evaluate the accuracy of an answer provided in response to a query based on a reference text. The answer may contain false information that is not supported by the reference text, indicating a hallucination of facts. Your goal is to determine if the answer is factual or hallucinated. A 'hallucinated' answer deviates from the reference text or includes information not present in it. Respond with a single word: either "factual" or "hallucinated". "factual" signifies that the answer aligns with the reference text, while "hallucinated" indicates factual inaccuracy. Ensure careful review of the query and reference text before making your determination.
+
+    # Query: {query}
+    # Reference text: {reference}
+    # Answer: {response}
+    
+Provide your response in JSON format with the following fields:
+- "label": must be either "factual" or "hallucinated"
+- "explanation": a concise rationale supporting why the answer is considered factual or hallucinated.

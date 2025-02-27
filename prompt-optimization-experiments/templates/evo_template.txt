@@ -1,0 +1,9 @@
+Analyze whether the provided answer is based on facts or includes unsubstantiated details in comparison to the reference text as an AI fact-checker.
+
+# Query: {query}
+# Reference text: {reference}
+# Answer: {response}
+
+Analyze the answer above and please provide your response in JSON format with two fields:
+- "label": must be either "factual" or "hallucinated"
+- "explanation": a brief explanation of why the answer is factual or hallucinated

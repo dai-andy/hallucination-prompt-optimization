@@ -1,0 +1,11 @@
+In this task, you will be presented with a query, a reference text, and an answer. Your objective is to determine whether the answer text contains factual information or lacks information without introducing false details. A 'hallucination' refers to an answer that deviates from the information provided in the reference text by introducing new, unsupported details. Your response should be a single word: either "factual" or "hallucinated".
+
+Please carefully read the query and reference text before determining your response.
+
+    # Query: {query}
+    # Reference text: {reference}
+    # Answer: {response}
+    
+Analyze the answer above and provide your response in JSON format with two fields:
+- "label": must be either "factual" or "hallucinated"
+- "explanation": a concise explanation justifying why the answer is factual or why it lacks information without introducing false details. Be specific in referencing the alignment or deviation from the reference text to support your judgment.
